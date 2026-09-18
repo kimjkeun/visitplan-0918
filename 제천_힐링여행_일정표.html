@@ -430,7 +430,7 @@
       background-color: var(--primary-light);
     }
 
-    /* Interactive Cafe Selection Box */
+    /* Interactive Selection Box (Food & Cafe) */
     .choice-container {
       background: #FAF8F5;
       border: 2px dashed #E2D2C7;
@@ -678,7 +678,7 @@
         <i class="fa-solid fa-heart"></i> 부부 힐링 주말 나들이 제안
       </div>
       <h1>청풍호의 물결과 맛있는 휴식<br>제천 당일치기 여행</h1>
-      <p>짐 쌀 필요 없이 가볍게 떠나는 하루 코스! 탁 트인 청풍호 360도 파노라마 전망, 정갈한 떡갈비 밥상, 그리고 고즈넉한 의림지 산책을 담았습니다.</p>
+      <p>짐 쌀 필요 없이 가볍게 떠나는 하루 코스! 탁 트인 청풍호 360도 파노라마 전망, 정갈한 미식 한 상, 그리고 고즈넉한 의림지 산책을 담았습니다.</p>
       
       <div class="hero-info-tags">
         <span class="info-tag"><i class="fa-regular fa-calendar-check"></i> 당일치기</span>
@@ -722,7 +722,7 @@
           </div>
           <h3 class="card-title">수도권 출발 ➡️ 제천 청풍호 도착</h3>
           <p class="card-desc" style="margin-bottom:0;">
-            아침 08:30경 여유롭게 출발하여 남제천 IC를 거쳐 아름다운 청풍호 벚나무 가로수길을 따라 드라이브합니다. (약 1시간 40분~2시간 소요)
+            아침 08:30경 여유롭게 출발하여 남제천 IC를 거쳐 아름다운 청풍호 가로수길을 따라 드라이브합니다. (약 1시간 40분~2시간 소요)
           </p>
         </div>
       </div>
@@ -756,36 +756,51 @@
         </div>
       </div>
 
-      <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 차로 5분 이동</div>
+      <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 점심 식사 이동</div>
 
-      <!-- 3. 점심 식사 -->
+      <!-- 3. 점심 미식 선택 인터랙션 -->
       <div class="timeline-node">
         <div class="node-icon"><i class="fa-solid fa-utensils"></i></div>
-        <div class="card">
-          <div class="card-top">
-            <span class="category-badge cat-food"><i class="fa-solid fa-fire-burner"></i> 점심 미식</span>
-            <span class="time-badge"><i class="fa-regular fa-clock"></i> 12:20 ~ 13:40</span>
+        <div class="choice-container">
+          <div class="choice-header">
+            <span class="choice-tag"><i class="fa-solid fa-hand-pointer"></i> 클릭해서 골라보세요</span>
+            <h3>점심 미식 선택: 어디서 드실래요?</h3>
           </div>
-          <h3 class="card-title">청풍황금떡갈비 (한우 떡갈비 정식)</h3>
-          <p class="card-desc">
-            케이블카에서 차로 5분 거리. 제천 특산 울금을 넣어 노릇하고 부드럽게 구워낸 한우 떡갈비와 따끈한 돌솥밥, 정갈한 밑반찬으로 푸짐한 점심을 즐깁니다.
-          </p>
-          <div class="tip-box">
-            <i class="fa-regular fa-lightbulb"></i>
-            <span>*대안*: 건강한 유기농 쌈밥과 수육을 원하시면 진입 길목에 위치한 <b>&lt;산아래&gt;</b>도 훌륭한 선택입니다.</span>
-          </div>
-          <div class="btn-group">
-            <a class="btn btn-naver" href="https://map.naver.com/p/search/%EC%B2%AD%ED%92%8D%ED%99%A9%EA%B8%88%EB%96%A1%EA%B0%88%EB%B9%84" target="_blank">
-              <i class="fa-solid fa-location-dot"></i> 떡갈비 지도 & 메뉴
-            </a>
-            <a class="btn btn-naver" href="https://map.naver.com/p/search/%EC%A0%9C%EC%B2%9C%20%EC%82%B0%EC%95%84%EB%9E%98" target="_blank">
-              대안: 산아래 지도
-            </a>
+          <div class="choice-grid">
+            <!-- 옵션 1: 산아래 -->
+            <div class="choice-card selected" id="lunch-opt1" onclick="selectLunch('opt1')">
+              <div>
+                <div class="choice-title">
+                  <i class="fa-solid fa-leaf" style="color:var(--primary);"></i> 산아래 (유기농 쌈밥)
+                </div>
+                <div class="choice-desc">
+                  대통령 표창 친환경 유기농 쌈채소 & 견과류 우렁쌈장과 부드러운 수육/오덕보쌈. 속 편하고 정갈해 <b>와이프 선호도 1위!</b>
+                </div>
+              </div>
+              <a class="btn btn-naver" style="justify-content:center;" href="https://map.naver.com/p/search/%EC%A0%9C%EC%B2%9C%20%EC%82%B0%EC%95%84%EB%9E%98" target="_blank" onclick="event.stopPropagation();">
+                산아래 지도 & 메뉴
+              </a>
+            </div>
+
+            <!-- 옵션 2: 청풍황금떡갈비 -->
+            <div class="choice-card" id="lunch-opt2" onclick="selectLunch('opt2')">
+              <div>
+                <div class="choice-title">
+                  <i class="fa-solid fa-fire-burner" style="color:var(--accent);"></i> 청풍황금떡갈비
+                </div>
+                <div class="choice-desc">
+                  제천 특산 울금을 넣어 노릇하고 부드럽게 구워낸 한우 떡갈비 정식 & 따끈한 돌솥밥. 케이블카에서 차로 5분 거리의 든든한 고기 밥상!
+                </div>
+              </div>
+              <a class="btn btn-naver" style="justify-content:center;" href="https://map.naver.com/p/search/%EC%B2%AD%ED%92%8D%ED%99%A9%EA%B8%88%EB%96%A1%EA%B0%88%EB%B9%84" target="_blank" onclick="event.stopPropagation();">
+                떡갈비 지도 & 메뉴
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 차로 약 5~10분 이동</div>
+      <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 오후 디저트 카페 이동</div>
 
       <!-- 4. 카페 선택 인터랙션 -->
       <div class="timeline-node">
@@ -947,9 +962,19 @@
   </div>
 
   <script>
+    // Lunch choice selection
+    function selectLunch(optId) {
+      document.querySelectorAll('#lunch-opt1, #lunch-opt2').forEach(c => c.classList.remove('selected'));
+      const target = document.getElementById('lunch-' + optId);
+      if (target) {
+        target.classList.add('selected');
+        showToast(optId === 'opt1' ? '산아래(유기농 쌈밥)가 선택되었습니다!' : '청풍황금떡갈비가 선택되었습니다!');
+      }
+    }
+
     // Cafe choice selection
     function selectCafe(optId) {
-      document.querySelectorAll('.choice-card').forEach(c => c.classList.remove('selected'));
+      document.querySelectorAll('#cafe-opt1, #cafe-opt2').forEach(c => c.classList.remove('selected'));
       const target = document.getElementById('cafe-' + optId);
       if (target) {
         target.classList.add('selected');
@@ -975,6 +1000,10 @@
 
     // Copy formatted plan text for KakaoTalk
     function copyPlanText() {
+      const selectedLunch = document.getElementById('lunch-opt1').classList.contains('selected')
+        ? '산아래 (유기농 쌈밥 & 수육)'
+        : '청풍황금떡갈비 (울금 떡갈비 정식 & 돌솥밥)';
+
       const selectedCafe = document.getElementById('cafe-opt1').classList.contains('selected') 
         ? '글루글루 (감성 포토존)' 
         : '카페 라끄 (호수 물멍)';
@@ -982,7 +1011,7 @@
       const planText = `[🌿 힐링 주말 여행: 제천 당일치기 나들이 일정]\n\n` +
         `• 08:30 출발 ➡️ 10:30 청풍호 도착\n` +
         `• 10:30 전망: 청풍호반 케이블카 (비봉산 정상 360도 호수뷰)\n` +
-        `• 12:20 점심: 청풍황금떡갈비 (울금 떡갈비 정식 & 돌솥밥)\n` +
+        `• 12:20 점심: ${selectedLunch}\n` +
         `• 13:50 카페: ${selectedCafe}\n` +
         `• 15:35 산책: 의림지 & 용추폭포 유리전망대\n` +
         `• 16:50 간식: 제천 중앙시장 빨간오뎅 & 덩실분식(찹쌀떡 포장)\n` +

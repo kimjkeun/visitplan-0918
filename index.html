@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>힐링 주말 여행 🍃 제천 1박 2일 플래너</title>
+  <title>힐링 주말 여행 🍃 제천 당일치기 플래너</title>
   
   <!-- Open Graph (카카오톡, SNS 미리보기) -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="힐링 주말 여행 🍃 제천 1박 2일 플래너">
-  <meta property="og:description" content="청풍호의 물결과 맛있는 휴식, 부부 제천 1박 2일 추천 여행 일정">
+  <meta property="og:title" content="힐링 주말 여행 🍃 제천 당일치기 플래너">
+  <meta property="og:description" content="청풍호의 물결과 맛있는 휴식, 부부 제천 당일치기 추천 여행 일정">
   <meta property="og:site_name" content="힐링 주말 여행">
   
   <!-- Pretendard & Font Awesome -->
@@ -62,12 +62,12 @@
       padding: 0 18px;
     }
 
-    /* Top Sticky Action Bar for Mobile */
+    /* Top Sticky Action Bar */
     .top-bar {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(245, 247, 246, 0.85);
+      background: rgba(245, 247, 246, 0.88);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(227, 232, 229, 0.8);
       padding: 10px 18px;
@@ -126,7 +126,7 @@
       box-shadow: var(--shadow-md);
       position: relative;
       overflow: hidden;
-      margin-bottom: 24px;
+      margin-bottom: 26px;
     }
 
     .hero-card::before {
@@ -167,7 +167,25 @@
       opacity: 0.9;
       margin-bottom: 20px;
       word-break: keep-all;
-      max-width: 480px;
+      max-width: 490px;
+    }
+
+    .hero-info-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .info-tag {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
     }
 
     /* Weather Mini Box */
@@ -205,7 +223,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      margin: 36px 0 16px;
+      margin: 32px 0 16px;
     }
 
     .section-title {
@@ -247,7 +265,7 @@
       background: var(--border);
     }
 
-    /* Timeline Node & Card */
+    /* Timeline Node */
     .timeline-node {
       position: relative;
       margin-bottom: 22px;
@@ -321,10 +339,11 @@
       gap: 4px;
     }
 
-    .cat-food { background: #FFF3EB; color: #C04E22; border: 1px solid #FCDCCC; }
+    .cat-start { background: #EEF3FA; color: #2E5188; border: 1px solid #D5E1F2; }
     .cat-view { background: #EEF6F2; color: #22513B; border: 1px solid #D1E5DA; }
-    .cat-hotel { background: #F0F4FA; color: #2E5188; border: 1px solid #D5E1F2; }
-    .cat-walk { background: #F6F4EE; color: #6E5A35; border: 1px solid #E8DFCC; }
+    .cat-food { background: #FFF3EB; color: #C04E22; border: 1px solid #FCDCCC; }
+    .cat-cafe { background: #F6F4EE; color: #6E5A35; border: 1px solid #E8DFCC; }
+    .cat-walk { background: #F3F8F5; color: #1D5C3F; border: 1px solid #CEE3D7; }
 
     .time-badge {
       font-size: 12.5px;
@@ -503,54 +522,7 @@
       word-break: keep-all;
     }
 
-    /* Day 2 Tabs */
-    .tab-nav {
-      display: flex;
-      background: #E8EDE9;
-      border-radius: var(--radius-md);
-      padding: 4px;
-      margin-bottom: 22px;
-      gap: 4px;
-    }
-
-    .tab-btn {
-      flex: 1;
-      border: none;
-      background: transparent;
-      padding: 12px 10px;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text-sub);
-      border-radius: 9px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-    }
-
-    .tab-btn.active {
-      background: white;
-      color: var(--primary);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    }
-
-    .tab-panel {
-      display: none;
-    }
-
-    .tab-panel.active {
-      display: block;
-      animation: fadeIn 0.25s ease;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(4px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Checklist & Packing Box */
+    /* Checklist Box */
     .packing-box {
       background: white;
       border: 1px solid var(--border);
@@ -615,10 +587,6 @@
       opacity: 0.85;
     }
 
-    .check-item input {
-      display: none;
-    }
-
     .custom-checkbox {
       width: 17px;
       height: 17px;
@@ -664,7 +632,6 @@
       transform: translateX(-50%) translateY(0);
     }
 
-    /* Footer */
     footer {
       text-align: center;
       margin-top: 50px;
@@ -672,7 +639,6 @@
       color: var(--text-light);
     }
 
-    /* Print Styles */
     @media print {
       .top-bar, .quick-actions, .btn-group, .choice-container button, footer {
         display: none !important;
@@ -691,7 +657,7 @@
   <div class="top-bar">
     <div class="top-bar-inner">
       <div class="brand-title">
-        <i class="fa-solid fa-leaf"></i> 제천 1박 2일 플래너
+        <i class="fa-solid fa-leaf"></i> 제천 당일치기 플래너
       </div>
       <div class="quick-actions">
         <button class="quick-btn" onclick="copyPlanText()">
@@ -709,11 +675,17 @@
     <!-- Hero Card -->
     <div class="hero-card">
       <div class="hero-subtag">
-        <i class="fa-solid fa-heart"></i> 부부 힐링 주말 여행 제안
+        <i class="fa-solid fa-heart"></i> 부부 힐링 주말 나들이 제안
       </div>
-      <h1>청풍호의 물결과 맛있는 휴식<br>제천 1박 2일 여행</h1>
-      <p>탁 트인 호수 파노라마 전망과 정갈한 자연 밥상, 그리고 고즈넉한 가을 산책을 담은 여유로운 추천 일정입니다.</p>
+      <h1>청풍호의 물결과 맛있는 휴식<br>제천 당일치기 여행</h1>
+      <p>짐 쌀 필요 없이 가볍게 떠나는 하루 코스! 탁 트인 청풍호 360도 파노라마 전망, 정갈한 떡갈비 밥상, 그리고 고즈넉한 의림지 산책을 담았습니다.</p>
       
+      <div class="hero-info-tags">
+        <span class="info-tag"><i class="fa-regular fa-calendar-check"></i> 당일치기</span>
+        <span class="info-tag"><i class="fa-solid fa-car-side"></i> 편도 약 1시간 40분</span>
+        <span class="info-tag"><i class="fa-solid fa-route"></i> 최적화 동선</span>
+      </div>
+
       <!-- Weather Mini Box -->
       <div class="weather-box">
         <div class="weather-left">
@@ -729,61 +701,49 @@
       </div>
     </div>
 
-    <!-- DAY 1 SECTION -->
+    <!-- TIMELINE SECTION -->
     <div class="section-head">
       <div class="section-title">
-        <span class="day-pill">1일차</span>
-        청풍호 올인원 코스
+        <span class="day-pill">일정</span>
+        제천 당일치기 힐링 타임라인
       </div>
-      <span class="day-summary">호수 풍경 & 로컬 미식</span>
+      <span class="day-summary">호수 전망 & 로컬 미식</span>
     </div>
 
     <div class="timeline">
 
-      <!-- 1. 산아래 -->
+      <!-- 1. 출발 -->
       <div class="timeline-node">
-        <div class="node-icon"><i class="fa-solid fa-utensils"></i></div>
-        <div class="card">
+        <div class="node-icon"><i class="fa-solid fa-car"></i></div>
+        <div class="card" style="background:#F9FBFA;">
           <div class="card-top">
-            <div class="badges-group">
-              <span class="category-badge cat-food"><i class="fa-solid fa-bowl-food"></i> 점심 미식</span>
-            </div>
-            <span class="time-badge"><i class="fa-regular fa-clock"></i> 11:30 ~ 12:40</span>
+            <span class="category-badge cat-start"><i class="fa-solid fa-flag-checkered"></i> 출발 & 드라이브</span>
+            <span class="time-badge"><i class="fa-regular fa-clock"></i> 08:30 ~ 10:30</span>
           </div>
-          <h3 class="card-title">산아래 (유기농 쌈밥 & 수육)</h3>
-          <p class="card-desc">남제천 IC 진입 길목(봉양읍)에 위치한 친환경 쌈밥집. 매일 아침 신선한 유기농 쌈채소와 우렁쌈장, 부드러운 수육/오덕보쌈이 정갈하게 차려져 첫 끼로 안성맞춤입니다.</p>
-          <div class="tip-box">
-            <i class="fa-regular fa-lightbulb"></i>
-            <span>자극적이지 않고 속 편한 한 상이라 와이프분들의 선호도가 특히 높습니다.</span>
-          </div>
-          <div class="btn-group">
-            <a class="btn btn-naver" href="https://map.naver.com/p/search/%EC%A0%9C%EC%B2%9C%20%EC%82%B0%EC%95%84%EB%9E%98" target="_blank">
-              <i class="fa-solid fa-location-dot"></i> 네이버 지도
-            </a>
-            <a class="btn btn-kakao" href="https://map.kakao.com/link/search/제천 산아래" target="_blank">
-              카카오맵
-            </a>
-          </div>
+          <h3 class="card-title">수도권 출발 ➡️ 제천 청풍호 도착</h3>
+          <p class="card-desc" style="margin-bottom:0;">
+            아침 08:30경 여유롭게 출발하여 남제천 IC를 거쳐 아름다운 청풍호 벚나무 가로수길을 따라 드라이브합니다. (약 1시간 40분~2시간 소요)
+          </p>
         </div>
       </div>
 
-      <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 차로 약 20분 이동 (청풍호 진입 드라이브길)</div>
+      <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 케이블카 물태리역 도착</div>
 
       <!-- 2. 청풍호반 케이블카 -->
       <div class="timeline-node">
         <div class="node-icon"><i class="fa-solid fa-cable-car"></i></div>
         <div class="card">
           <div class="card-top">
-            <div class="badges-group">
-              <span class="category-badge cat-view"><i class="fa-solid fa-mountain-sun"></i> 파노라마 전망</span>
-            </div>
-            <span class="time-badge"><i class="fa-regular fa-clock"></i> 13:00 ~ 14:40</span>
+            <span class="category-badge cat-view"><i class="fa-solid fa-mountain-sun"></i> 파노라마 전망</span>
+            <span class="time-badge"><i class="fa-regular fa-clock"></i> 10:30 ~ 12:10</span>
           </div>
           <h3 class="card-title">청풍호반 케이블카 (물태리역)</h3>
-          <p class="card-desc">물태리역에서 케이블카를 타고 비봉산 정상(해발 531m)에 오릅니다. 정상 전망대에 서면 사방이 푸른 청풍호와 겹겹이 이어진 산세로 둘러싸여 가슴이 시원해집니다.</p>
+          <p class="card-desc">
+            오전 이른 시간에 탑승하여 주말 대기 줄을 최소화합니다. 비봉산 정상(해발 531m)에 오르면 에메랄드빛 청풍호가 360도로 시원하게 펼쳐집니다.
+          </p>
           <div class="tip-box">
             <i class="fa-regular fa-lightbulb"></i>
-            <span>정상 테라스 곳곳에 예쁜 포토존이 있습니다. 포털 사전 예매 시 할인 발권이 가능합니다.</span>
+            <span>정상 전망 데크에 예쁜 포토존이 많아 오전에 둘이서 사진 남기기 가장 좋습니다. 포털 사전 예매 시 할인 혜택이 있습니다.</span>
           </div>
           <div class="btn-group">
             <a class="btn btn-outline" href="https://www.cheongpungcablecar.com/" target="_blank">
@@ -796,15 +756,44 @@
         </div>
       </div>
 
-      <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 차로 약 10분 이동</div>
+      <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 차로 5분 이동</div>
 
-      <!-- 3. 카페 선택 인터랙션 -->
+      <!-- 3. 점심 식사 -->
+      <div class="timeline-node">
+        <div class="node-icon"><i class="fa-solid fa-utensils"></i></div>
+        <div class="card">
+          <div class="card-top">
+            <span class="category-badge cat-food"><i class="fa-solid fa-fire-burner"></i> 점심 미식</span>
+            <span class="time-badge"><i class="fa-regular fa-clock"></i> 12:20 ~ 13:40</span>
+          </div>
+          <h3 class="card-title">청풍황금떡갈비 (한우 떡갈비 정식)</h3>
+          <p class="card-desc">
+            케이블카에서 차로 5분 거리. 제천 특산 울금을 넣어 노릇하고 부드럽게 구워낸 한우 떡갈비와 따끈한 돌솥밥, 정갈한 밑반찬으로 푸짐한 점심을 즐깁니다.
+          </p>
+          <div class="tip-box">
+            <i class="fa-regular fa-lightbulb"></i>
+            <span>*대안*: 건강한 유기농 쌈밥과 수육을 원하시면 진입 길목에 위치한 <b>&lt;산아래&gt;</b>도 훌륭한 선택입니다.</span>
+          </div>
+          <div class="btn-group">
+            <a class="btn btn-naver" href="https://map.naver.com/p/search/%EC%B2%AD%ED%92%8D%ED%99%A9%EA%B8%88%EB%96%A1%EA%B0%88%EB%B9%84" target="_blank">
+              <i class="fa-solid fa-location-dot"></i> 떡갈비 지도 & 메뉴
+            </a>
+            <a class="btn btn-naver" href="https://map.naver.com/p/search/%EC%A0%9C%EC%B2%9C%20%EC%82%B0%EC%95%84%EB%9E%98" target="_blank">
+              대안: 산아래 지도
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 차로 약 5~10분 이동</div>
+
+      <!-- 4. 카페 선택 인터랙션 -->
       <div class="timeline-node">
         <div class="node-icon"><i class="fa-solid fa-mug-hot"></i></div>
         <div class="choice-container">
           <div class="choice-header">
             <span class="choice-tag"><i class="fa-solid fa-hand-pointer"></i> 클릭해서 골라보세요</span>
-            <h3>1일차 오후 카페: 어디가 더 끌리나요?</h3>
+            <h3>오후 감성 카페: 어디가 더 끌리나요?</h3>
           </div>
           <div class="choice-grid">
             <!-- 옵션 1 -->
@@ -840,255 +829,80 @@
         </div>
       </div>
 
-      <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 차로 약 5~10분 이동</div>
+      <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 차로 약 20분 이동 (제천 시내 방향)</div>
 
-      <!-- 4. 청풍리조트 레이크호텔 -->
+      <!-- 5. 의림지 & 용추폭포 -->
       <div class="timeline-node">
-        <div class="node-icon"><i class="fa-solid fa-hotel"></i></div>
+        <div class="node-icon"><i class="fa-solid fa-water"></i></div>
         <div class="card">
           <div class="card-top">
-            <div class="badges-group">
-              <span class="category-badge cat-hotel"><i class="fa-solid fa-bed"></i> 호수 전망 숙소</span>
-            </div>
-            <span class="time-badge"><i class="fa-regular fa-clock"></i> 16:30 ~ 17:50</span>
+            <span class="category-badge cat-walk"><i class="fa-solid fa-person-walking"></i> 명소 산책</span>
+            <span class="time-badge"><i class="fa-regular fa-clock"></i> 15:35 ~ 16:40</span>
           </div>
-          <h3 class="card-title">청풍리조트 레이크호텔 (체크인)</h3>
-          <p class="card-desc">사방이 호수로 둘러싸인 반도형 지형의 호텔. 객실 테라스에서 잔잔한 호수의 윤슬을 내려다보며 늦은 오후의 여유로운 휴식을 즐깁니다.</p>
+          <h3 class="card-title">의림지 & 용추폭포 유리전망대</h3>
+          <p class="card-desc">
+            삼국시대부터 이어진 유서 깊은 저수지와 수백 년 된 아름다운 솔밭길을 걷습니다. 쏟아지는 폭포 바로 위에 세워진 투명 유리 스카이워크에서 시원한 풍경을 감상해보세요.
+          </p>
           <div class="tip-box">
             <i class="fa-regular fa-lightbulb"></i>
-            <span>체크인 시 '슈페리어 레이크뷰' 또는 고층 호수 전망 객실을 요청하시면 아침 풍경이 좋습니다.</span>
+            <span>경사가 거의 없는 평지 산책로라 식후에 도란도란 걷기 편안합니다.</span>
           </div>
           <div class="btn-group">
-            <a class="btn btn-outline" href="https://www.cheongpungresort.co.kr" target="_blank">
-              <i class="fa-solid fa-globe"></i> 공식 웹사이트
-            </a>
-            <a class="btn btn-naver" href="https://map.naver.com/p/search/%EC%B2%AD%ED%92%8D%EB%A6%AC%EC%A1%B0%ED%8A%B8%20%EB%A0%88%EC%9D%B4%ED%81%AC%ED%98%B8%ED%85%94" target="_blank">
-              <i class="fa-solid fa-location-dot"></i> 네이버 지도
+            <a class="btn btn-naver" href="https://map.naver.com/p/search/%EC%A0%9C%EC%B2%9C%20%EC%9D%98%EB%A6%BC%EC%A7%80" target="_blank">
+              <i class="fa-solid fa-location-dot"></i> 의림지 지도 & 사진
             </a>
           </div>
         </div>
       </div>
 
-      <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 차로 5분 이동</div>
+      <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 차로 약 10분 이동</div>
 
-      <!-- 5. 저녁 식사 -->
+      <!-- 6. 제천 중앙시장 & 덩실분식 -->
       <div class="timeline-node">
-        <div class="node-icon"><i class="fa-solid fa-utensils"></i></div>
+        <div class="node-icon"><i class="fa-solid fa-bag-shopping"></i></div>
         <div class="card">
           <div class="card-top">
-            <div class="badges-group">
-              <span class="category-badge cat-food"><i class="fa-solid fa-fire-burner"></i> 저녁 미식</span>
-            </div>
-            <span class="time-badge"><i class="fa-regular fa-clock"></i> 18:00 ~ 19:30</span>
+            <span class="category-badge cat-food"><i class="fa-solid fa-cookie-bite"></i> 명물 간식 & 픽업</span>
+            <span class="time-badge"><i class="fa-regular fa-clock"></i> 16:50 ~ 17:30</span>
           </div>
-          <h3 class="card-title">청풍황금떡갈비 (호텔 5분 거리)</h3>
-          <p class="card-desc">제천 특산 울금을 넣어 노릇하고 부드럽게 구워낸 한우 떡갈비 정식. 따끈한 돌솥밥과 깔끔한 나물 밑반찬이 정갈하게 차려집니다.</p>
+          <h3 class="card-title">제천 중앙시장 빨간오뎅 & 덩실분식</h3>
+          <p class="card-desc">
+            매콤달콤한 특제 양념의 제천 명물 빨간오뎅을 가볍게 맛보고, 생활의 달인에 방영된 3대 전통 덩실분식 찹쌀떡과 도넛을 포장합니다.
+          </p>
+          <div class="tip-box">
+            <i class="fa-regular fa-lightbulb"></i>
+            <span>귀갓길 차 안에서 먹을 간식 겸 집에서 즐길 주전부리로 최고입니다.</span>
+          </div>
           <div class="btn-group">
-            <a class="btn btn-naver" href="https://map.naver.com/p/search/%EC%B2%AD%ED%92%8D%ED%98%99%EA%B8%88%EB%96%A1%EA%B0%88%EB%B9%84" target="_blank">
-              <i class="fa-solid fa-location-dot"></i> 네이버 지도 & 메뉴
-            </a>
-            <a class="btn btn-kakao" href="https://map.kakao.com/link/search/청풍황금떡갈비" target="_blank">
-              카카오맵
+            <a class="btn btn-naver" href="https://map.naver.com/p/search/%EC%A0%9C%EC%B2%9C%20%EB%8D%A9%EC%8B%A4%EB%B6%84%EC%8B%9D" target="_blank">
+              <i class="fa-solid fa-location-dot"></i> 덩실분식 지도 & 리뷰
             </a>
           </div>
         </div>
       </div>
 
-      <!-- 6. 밤 산책 -->
+      <!-- 7. 귀가 -->
       <div class="timeline-node">
-        <div class="node-icon"><i class="fa-solid fa-moon"></i></div>
+        <div class="node-icon"><i class="fa-solid fa-house"></i></div>
         <div class="card" style="background:#F9FBFA;">
           <div class="card-top">
-            <div class="badges-group">
-              <span class="category-badge cat-walk"><i class="fa-solid fa-person-walking"></i> 호반 힐링</span>
-            </div>
-            <span class="time-badge"><i class="fa-regular fa-clock"></i> 20:00 ~</span>
+            <span class="category-badge cat-start"><i class="fa-solid fa-car-side"></i> 귀가 출발</span>
+            <span class="time-badge"><i class="fa-regular fa-clock"></i> 17:30 ~ 19:30</span>
           </div>
-          <h3 class="card-title">호텔 수변 산책로 밤 산책</h3>
+          <h3 class="card-title">제천IC 통해 상경 ➡️ 편안한 집 도착</h3>
           <p class="card-desc" style="margin-bottom:0;">
-            호텔 뒤편 호수를 따라 이어진 잔잔한 데크 산책로를 걸으며 선선한 초가을 밤공기와 호수 야경을 즐깁니다.
+            17:30경 여유롭게 제천IC로 진입하여 상경합니다. 주말 고속도로 극심한 야간 정체를 피해 19:30~20:00경 집에 도착해, 일요일은 온전히 푹 쉬며 주말을 마무리합니다!
           </p>
         </div>
       </div>
 
     </div>
 
-    <!-- DAY 2 SECTION -->
-    <div class="section-head" style="margin-top:46px;">
-      <div class="section-title">
-        <span class="day-pill">2일차</span>
-        둘째 날 선택 코스
-      </div>
-      <span class="day-summary">10:30 체크아웃 후 선택</span>
-    </div>
-
-    <!-- 2일차 탭 전환 버튼 -->
-    <div class="tab-nav">
-      <button class="tab-btn active" id="btn-plan1" onclick="switchPlan('plan1')">
-        <i class="fa-solid fa-spa"></i> 플랜 1: 제천 여유 힐링
-      </button>
-      <button class="tab-btn" id="btn-plan2" onclick="switchPlan('plan2')">
-        <i class="fa-solid fa-compass"></i> 플랜 2: 단양 반나절 확장
-      </button>
-    </div>
-
-    <!-- PLAN 1 CONTENT -->
-    <div id="plan1" class="tab-panel active">
-      <p style="font-size:13px; color:var(--text-sub); margin-bottom:16px;">
-        🌿 <b>플랜 1 특징</b>: 이동이 편안하고 고요한 자연 숲길과 제천 로컬 명물을 여유롭게 즐기는 코스
-      </p>
-
-      <div class="timeline">
-        <!-- 배론성지 -->
-        <div class="timeline-node">
-          <div class="node-icon"><i class="fa-solid fa-tree"></i></div>
-          <div class="card">
-            <div class="card-top">
-              <span class="category-badge cat-view"><i class="fa-solid fa-leaf"></i> 고즈넉한 숲길</span>
-              <span class="time-badge"><i class="fa-regular fa-clock"></i> 11:00 ~ 12:00</span>
-            </div>
-            <h3 class="card-title">배론성지 고요한 산책</h3>
-            <p class="card-desc">평화로운 성지 산책로와 연못, 초가을 은행나무길이 어우러진 힐링 명소. 번잡함 없이 부부가 오붓하게 손잡고 걷기에 최고입니다.</p>
-            <div class="btn-group">
-              <a class="btn btn-naver" href="https://map.naver.com/p/search/%EC%A0%9C%EC%B2%9C%20%EB%B0%B0%EB%A1%A0%EC%84%B1%EC%A7%80" target="_blank">
-                <i class="fa-solid fa-location-dot"></i> 네이버 지도
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 차로 약 20분 이동</div>
-
-        <!-- 의림지 & 용추폭포 -->
-        <div class="timeline-node">
-          <div class="node-icon"><i class="fa-solid fa-water"></i></div>
-          <div class="card">
-            <div class="card-top">
-              <span class="category-badge cat-view"><i class="fa-solid fa-bridge-water"></i> 제천 대표 명소</span>
-              <span class="time-badge"><i class="fa-regular fa-clock"></i> 12:30 ~ 13:30</span>
-            </div>
-            <h3 class="card-title">의림지 & 용추폭포 유리전망대</h3>
-            <p class="card-desc">수백 년 된 울창한 소나무 숲길 산책로와, 시원한 폭포 바로 위에 세워진 유리 스카이워크에서 가벼운 산책을 즐깁니다.</p>
-            <div class="btn-group">
-              <a class="btn btn-naver" href="https://map.naver.com/p/search/%EC%A0%9C%EC%B2%9C%20%EC%9D%98%EB%A6%BC%EC%A7%80" target="_blank">
-                <i class="fa-solid fa-location-dot"></i> 네이버 지도
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 차로 약 10분 이동</div>
-
-        <!-- 점심: 두학농가 / 꿀참나무 -->
-        <div class="timeline-node">
-          <div class="node-icon"><i class="fa-solid fa-bowl-rice"></i></div>
-          <div class="card">
-            <div class="card-top">
-              <span class="category-badge cat-food"><i class="fa-solid fa-utensils"></i> 건강 점심</span>
-              <span class="time-badge"><i class="fa-regular fa-clock"></i> 13:30 ~ 14:30</span>
-            </div>
-            <h3 class="card-title">두학농가 or 꿀참나무</h3>
-            <p class="card-desc">
-              • <b>두학농가</b>: 직접 만드는 부드러운 손두부찌개와 구수한 청국장 시골밥상<br>
-              • <b>꿀참나무</b>: 도토리 전병, 묵밥 등 담백하고 깔끔한 웰빙 도토리 정식
-            </p>
-            <div class="btn-group">
-              <a class="btn btn-naver" href="https://map.naver.com/p/search/%EC%A0%9C%EC%B2%9C%20%EB%91%90%ED%95%99%EB%86%8D%EA%B0%80" target="_blank">두학농가 지도</a>
-              <a class="btn btn-naver" href="https://map.naver.com/p/search/%EC%A0%9C%EC%B2%9C%20%EA%BF%80%EC%B0%B8%EB%82%98%EB%AC%B4" target="_blank">꿀참나무 지도</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 디저트 & 픽업 -->
-        <div class="timeline-node">
-          <div class="node-icon"><i class="fa-solid fa-cookie-bite"></i></div>
-          <div class="card">
-            <div class="card-top">
-              <span class="category-badge cat-food"><i class="fa-solid fa-bag-shopping"></i> 명물 간식</span>
-              <span class="time-badge"><i class="fa-regular fa-clock"></i> 14:45 ~ 15:30</span>
-            </div>
-            <h3 class="card-title">제천 중앙시장 빨간오뎅 & 덩실분식</h3>
-            <p class="card-desc">매콤달콤한 소스의 제천 명물 빨간오뎅 맛보기 & 생활의 달인 3대 전통 찹쌀떡과 도넛을 포장한 후 15:30 여유롭게 귀가합니다.</p>
-            <div class="btn-group">
-              <a class="btn btn-naver" href="https://map.naver.com/p/search/%EC%A0%9C%EC%B2%9C%20%EB%8D%A9%EC%8B%A4%EB%B6%84%EC%8B%9D" target="_blank">덩실분식 지도 & 리뷰</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PLAN 2 CONTENT -->
-    <div id="plan2" class="tab-panel">
-      <p style="font-size:13px; color:var(--text-sub); margin-bottom:16px;">
-        ⛰️ <b>플랜 2 특징</b>: 청풍호에서 25분 거리 단양으로 이동해 해발 600m 절벽 카페와 활기찬 전통시장을 즐기는 코스
-      </p>
-
-      <div class="timeline">
-        <!-- 도담삼봉 -->
-        <div class="timeline-node">
-          <div class="node-icon"><i class="fa-solid fa-mountain"></i></div>
-          <div class="card">
-            <div class="card-top">
-              <span class="category-badge cat-view"><i class="fa-solid fa-landmark"></i> 단양 제1경</span>
-              <span class="time-badge"><i class="fa-regular fa-clock"></i> 11:00 ~ 11:40</span>
-            </div>
-            <h3 class="card-title">단양 도담삼봉 & 석문</h3>
-            <p class="card-desc">청풍호에서 차로 25분 거리. 맑은 남한강 한가운데에 솟아있는 3개의 기암괴석과 정자의 운치 있는 비경을 감상합니다.</p>
-            <div class="btn-group">
-              <a class="btn btn-naver" href="https://map.naver.com/p/search/%EB%8B%A8%EC%96%91%20%EB%8F%84%EB%8B%B4%EC%82%BC%EB%B4%89" target="_blank">
-                <i class="fa-solid fa-location-dot"></i> 네이버 지도
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 차로 약 15분 이동</div>
-
-        <!-- 카페산 -->
-        <div class="timeline-node">
-          <div class="node-icon"><i class="fa-solid fa-cloud-sun"></i></div>
-          <div class="card">
-            <div class="card-top">
-              <span class="category-badge cat-view"><i class="fa-solid fa-mountain"></i> 해발 600m 뷰</span>
-              <span class="time-badge"><i class="fa-regular fa-clock"></i> 12:00 ~ 13:30</span>
-            </div>
-            <h3 class="card-title">카페산 (CAFE SANN)</h3>
-            <p class="card-desc">해발 600m 활공장 정상에 자리한 베이커리 카페. 발아래로 남한강이 굽이치고 바로 눈앞에서 패러글라이더들이 이륙하는 이색 장관을 감상할 수 있습니다.</p>
-            <div class="btn-group">
-              <a class="btn btn-naver" href="https://map.naver.com/p/search/%EB%8B%A8%EC%96%91%20%EC%B9%B4%ED%8E%98%EC%82%B0" target="_blank">
-                <i class="fa-solid fa-location-dot"></i> 네이버 지도
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="travel-distance"><i class="fa-solid fa-arrow-down"></i> 차로 약 15분 이동</div>
-
-        <!-- 단양 구경시장 -->
-        <div class="timeline-node">
-          <div class="node-icon"><i class="fa-solid fa-store"></i></div>
-          <div class="card">
-            <div class="card-top">
-              <span class="category-badge cat-food"><i class="fa-solid fa-utensils"></i> 전통시장 먹거리</span>
-              <span class="time-badge"><i class="fa-regular fa-clock"></i> 13:40 ~ 15:00</span>
-            </div>
-            <h3 class="card-title">단양 구경시장 먹거리 투어</h3>
-            <p class="card-desc">마늘순대, 흑마늘 닭강정, 마늘바게트 등 전국적으로 유명한 단양 전통시장의 풍성한 별미를 즐기고 포장한 뒤 15:30 귀가합니다.</p>
-            <div class="btn-group">
-              <a class="btn btn-naver" href="https://map.naver.com/p/search/%EB%8B%A8%EC%96%91%20%EA%B5%AC%EA%B2%BD%EC%8B%9C%EC%9E%A5" target="_blank">
-                <i class="fa-solid fa-location-dot"></i> 네이버 지도
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- PACKING CHECKLIST -->
     <div class="packing-box">
       <div class="packing-head">
         <div class="packing-title">
-          <i class="fa-solid fa-suitcase-rolling"></i> 함께 챙길 준비물 체크리스트
+          <i class="fa-solid fa-suitcase"></i> 당일치기 가벼운 준비물
         </div>
       </div>
       <div class="checklist">
@@ -1098,11 +912,11 @@
         </div>
         <div class="check-item" onclick="toggleCheck(this)">
           <div class="custom-checkbox"><i class="fa-solid fa-check"></i></div>
-          <span>얇은 가디건 / 겉옷 (초가을 아침·저녁)</span>
+          <span>가벼운 가디건 (초가을 아침·저녁 쌀쌀함 대비)</span>
         </div>
         <div class="check-item" onclick="toggleCheck(this)">
           <div class="custom-checkbox"><i class="fa-solid fa-check"></i></div>
-          <span>보조 배터리 & 카메라</span>
+          <span>보조 배터리 & 차량용 충전기</span>
         </div>
         <div class="check-item" onclick="toggleCheck(this)">
           <div class="custom-checkbox"><i class="fa-solid fa-check"></i></div>
@@ -1110,18 +924,18 @@
         </div>
         <div class="check-item" onclick="toggleCheck(this)">
           <div class="custom-checkbox"><i class="fa-solid fa-check"></i></div>
-          <span>케이블카 모바일 예매 바코드</span>
+          <span>케이블카 사전 예매 모바일 바코드</span>
         </div>
         <div class="check-item" onclick="toggleCheck(this)">
           <div class="custom-checkbox"><i class="fa-solid fa-check"></i></div>
-          <span>개인 텀블러 (드라이브 커피용)</span>
+          <span>개인 텀블러 (드라이브 모닝커피용)</span>
         </div>
       </div>
     </div>
 
     <!-- FOOTER -->
     <footer>
-      <p>🌿 와이프분과 함께 편안하고 행복한 주말 여행 되세요!</p>
+      <p>🌿 와이프분과 함께 부담 없이 알차고 행복한 당일치기 나들이 되세요!</p>
     </footer>
 
   </div>
@@ -1133,19 +947,6 @@
   </div>
 
   <script>
-    // Tab switching
-    function switchPlan(planId) {
-      document.querySelectorAll('.tab-panel').forEach(el => el.classList.remove('active'));
-      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-      
-      document.getElementById(planId).classList.add('active');
-      if (planId === 'plan1') {
-        document.getElementById('btn-plan1').classList.add('active');
-      } else {
-        document.getElementById('btn-plan2').classList.add('active');
-      }
-    }
-
     // Cafe choice selection
     function selectCafe(optId) {
       document.querySelectorAll('.choice-card').forEach(c => c.classList.remove('selected'));
@@ -1178,23 +979,18 @@
         ? '글루글루 (감성 포토존)' 
         : '카페 라끄 (호수 물멍)';
 
-      const planText = `[🌿 힐링 주말 여행: 제천 1박 2일 일정]\n\n` +
-        `■ 1일차\n` +
-        `• 11:30 점심: 산아래 (유기농 쌈밥&수육)\n` +
-        `• 13:00 전망: 청풍호반 케이블카 (비봉산 정상 360도 호수뷰)\n` +
-        `• 15:00 카페: ${selectedCafe}\n` +
-        `• 16:30 숙소: 청풍리조트 레이크호텔 체크인 & 휴식\n` +
-        `• 18:00 저녁: 청풍황금떡갈비 (울금 떡갈비 정식)\n` +
-        `• 20:00 산책: 호텔 수변 산책로 밤 산책\n\n` +
-        `■ 2일차 (선택)\n` +
-        `[플랜 1 - 제천 여유 힐링]\n` +
-        `배론성지 숲길 산책 ➡️ 의림지/용추폭포 ➡️ 두학농가(손두부) ➡️ 중앙시장(빨간오뎅&덩실분식)\n\n` +
-        `[플랜 2 - 단양 반나절 확장]\n` +
-        `도담삼봉 ➡️ 해발 600m 절벽 뷰 카페산 ➡️ 단양 구경시장 먹거리 투어\n\n` +
-        `자세한 내용과 지도는 공유된 링크/파일에서 확인해봐요! ❤️`;
+      const planText = `[🌿 힐링 주말 여행: 제천 당일치기 나들이 일정]\n\n` +
+        `• 08:30 출발 ➡️ 10:30 청풍호 도착\n` +
+        `• 10:30 전망: 청풍호반 케이블카 (비봉산 정상 360도 호수뷰)\n` +
+        `• 12:20 점심: 청풍황금떡갈비 (울금 떡갈비 정식 & 돌솥밥)\n` +
+        `• 13:50 카페: ${selectedCafe}\n` +
+        `• 15:35 산책: 의림지 & 용추폭포 유리전망대\n` +
+        `• 16:50 간식: 제천 중앙시장 빨간오뎅 & 덩실분식(찹쌀떡 포장)\n` +
+        `• 17:30 출발 ➡️ 19:30 집 도착 후 편안한 휴식!\n\n` +
+        `상세 내용과 지도는 공유된 링크에서 확인해봐요! ❤️`;
 
       navigator.clipboard.writeText(planText).then(() => {
-        showToast('카톡 공유용 일정 요약이 복사되었습니다!');
+        showToast('카톡 공유용 당일치기 일정이 복사되었습니다!');
       }).catch(() => {
         showToast('복사 권한이 없어 복사하지 못했습니다.');
       });
